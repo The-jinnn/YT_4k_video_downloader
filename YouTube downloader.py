@@ -1,59 +1,3 @@
-# from pytube import YouTube
-
-# def download_video(url, download_path):
-#     try:
-#         yt = YouTube(url)
-#         video = yt.streams.get_highest_resolution()
-#         print("Downloading video...")
-#         video.download(output_path=download_path, filename=yt.title)
-#         print("Video downloaded successfully!")
-#     except Exception as e:
-#         print("Error:", e)
-
-# if __name__ == "__main__":
-#     video_url = input("Enter the YouTube video URL: ")
-#     download_path = r"C:\Users\Gowtham\Videos"  # Update this with your desired download path
-#     download_video(video_url, download_path)
-
-# from pytube import YouTube
-# import os
-
-# def download_4k_video(url, download_path):
-#     try:
-#         # Create a YouTube object
-#         yt = YouTube(url)
-
-#         # Filter streams to get the highest resolution (4K in this case)
-#         video_stream = yt.streams.filter(res="2160p", file_extension='mp4').first()
-
-#         # Check if 4K video is available
-#         if video_stream is None:
-#             print("4K video is not available for this video.")
-#             return
-
-#         # Displaying video title
-#         print(f"Title: {yt.title}")
-
-#         # Displaying download status
-#         print("Starting download...")
-
-#         # Download the video
-#         video_stream.download(output_path=download_path)
-
-#         # Displaying completion status
-#         print(f"Download completed! Video saved to: {os.path.join(download_path, video_stream.default_filename)}")
-    
-#     except Exception as e:
-#         print(f"An error occurred: {e}")
-
-# # Example usage
-# url = "https://www.youtube.com/watch?v=ijBxe70sd8M"  # Replace with the actual YouTube video URL
-# download_path = r"C:\Users\Gowtham\Videos"  # Replace with your desired download path
-
-# download_4k_video(url, download_path)
-
-
-
 from pytube import YouTube
 import os
 from moviepy.editor import VideoFileClip, AudioFileClip, concatenate_videoclips
@@ -100,7 +44,7 @@ def download_4k_video(url, download_path):
         print(f"An error occurred: {e}")
 
 # Example usage
-url = "https://youtu.be/ijBxe70sd8M?si=Z8lkjdEi2DumMX6Q"  # Replace with the actual YouTube video URL
-download_path =  r"C:\Users\Gowtham\Videos"  # Replace with your desired download path
+url = "video url"  # Replace with the actual YouTube video URL
+download_path =  "path"  # Replace with your desired download path
 
 download_4k_video(url, download_path)
