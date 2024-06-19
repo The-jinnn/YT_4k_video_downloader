@@ -1,14 +1,9 @@
 # YT_4k_videodownloader
 To download youtube 4k videos with python packages
 
-Requirements
-
-Make sure you have the following Python packages installed:
-•	pytube
-•	moviepy
-
 Installation Steps
 1.	Clone the Repository:
+ 
     o	Clone this repository to your local machine.
 
     git clone <repository_url>
@@ -16,6 +11,7 @@ Installation Steps
 
    
 3.	Install Dependencies:
+
     o	Install the required Python packages using requirements.txt.
 
     pip install -r requirements.txt
